@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        background: #eff0f4;
+      }
+
+      /* input::-webkit-input-placeholder {
+        color:gray;
+      }
+
+      input:-moz-placeholder {
+        color:gray;
+      }
+
+      input::-moz-placeholder {
+        color:gray;
+      }
+
+      input:-ms-input-placeholder {
+        color:gray;
+      } */
+
+      .head {
+        width: 100%;
+        height: 40px;
+        background: #5fc0cd;
+        color:#fff;
+        line-height:40px;
+        position:relative;
+      }
+
+      .head .register {
+        float:left;
+        margin-left:2%;
+      }
+
+      .head .login {
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin-left:-20.39px;
+        margin-top: -11.5px;
+        font: bold 20px serif,sans-serif;
+      }
+
+      .head .close {
+        float:right;
+        margin-right:2%;
+      }
+
+      .tel,
+      .pwd {
+        width:100%;
+        height:50px;
+        margin-top:10px;
+        position: relative;
+        background: #fff;
+        overflow: hidden;
+      }
+
+      .tel img,
+      .pwd img {
+        position: absolute;
+        left:20px;
+        top: 13px;
+      }
+
+      .tel .line,
+      .pwd .line {
+        width:1px;
+        height:27px;
+        position: absolute;
+        left:55px;
+        top:10px;
+        background: #eaedee;
+      }
+
+      .tel input,
+      .pwd input {
+        height:50px;
+        outline:none;
+        border:0;
+        margin-left: 80px;
+      }
+
+      button{
+        width:100%;
+        height:40px;
+        background:#5fc0cd;
+        margin-top:10px;
+        border:none;
+        letter-spacing: 8px;
+        color:#fff;
+      }
+
+      a {
+        float:right;
+        margin: 5px 2% 0 0;
+        color: #5fc0cd;
+        text-decoration: underline;
+        font-size: 12px;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="head">
+    <span class="register">注册</span>
+    <span class="login">登录</span>
+    <span class="close">关闭</span>
+  </div>
+  <div class="tel">
+    <img src="img/tel.png" />
+    <div class="line"></div>
+    <input type="text" placeholder="请输入手机号" />
+  </div>
+  <div class="pwd">
+    <img src="img/pwd.png" />
+    <div class="line"></div>
+    <input type="text" placeholder="请输入密码" />
+  </div>
+  <button type="submit">登录</button>
+  <a>忘记密码</a>
+</body>
+
+</html>

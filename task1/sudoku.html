@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+
+      html{
+        font-size: 100px;
+        height:100%;
+      }
+
+      .bg{
+        width:36%;
+        height:6.7rem;
+      }
+
+      .boxes{
+        width:100%;
+        height:1.9rem;
+      }
+
+      .box{
+        width: 24.1%;
+        height: 1.651rem;
+        margin-left:0.1rem;
+        margin-top:0.1rem;
+        border-radius:0.1rem;
+        background: #fea500;
+        float:left;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="bg">
+      <div class="boxes">
+        <div class="first-line box"></div>
+        <div class="first-line box"></div>
+        <div class="first-line box"></div>
+      </div>
+      <div class="boxes">
+        <div class="second-line box"></div>
+        <div class="second-line box"></div>
+        <div class="second-line box"></div>
+      </div>
+      <div class="boxes">
+        <div class="third-line box"></div>
+        <div class="third-line box"></div>
+        <div class="third-line box"></div>
+      </div>
+    </div>
+    <script>
+      var designWidth = 1903,
+        ratio = 100;
+      document.documentElement.style.fontSize = ((window.innerWidth / designWidth) * ratio) + 'px';
+      window.onresize = function() {
+        document.documentElement.style.fontSize = ((window.innerWidth / designWidth) * ratio) + 'px';
+      }
+    </script>
+  </body>
+</html>

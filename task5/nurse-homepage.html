@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+      }
+
+      .head{
+        width:100%;
+        height: 50px;
+        background:#5fc0cd;
+        text-align:center;
+        color:#fff;
+        font: bold;
+        letter-spacing: 3px;
+        font-size:18px;
+        padding-top:1px;
+      }
+
+      .arrow {
+        width:10px;
+        height:10px;
+        border-top:2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(-135deg);
+        margin: 20px 0 0 20px;
+      }
+
+      .head span{
+        display:block;
+        margin-top:-19px;
+      }
+
+      .content {
+        overflow: auto;
+        width:100%;
+        height:600px;
+      }
+
+      .background {
+        width:100%;
+        height:164px;
+        background:url(img/bg.png) no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .background img.person{
+        float:left;
+        margin:39.5px 0 0 20px;
+      }
+
+      .background div {
+        float:left;
+        color:#fff;
+        margin:61px 0 0 20px;
+      }
+
+      .background div p{
+        font-size:20px;
+      }
+
+      .background div span {
+        margin-left:5px;
+      }
+
+      .content{
+        width:100%;
+      }
+
+      .first-row {
+        width:100%;
+        height:50px;
+        border-bottom:2px solid #e1e5e7;
+        padding-top:1px;
+      }
+
+      .first-row .vertical-line{
+        width:5px;
+        height:17px;
+        background:#5fc0cd;
+        float:left;
+        margin:17px 0 0 20px;
+      }
+
+      .first-row span{
+        display:block;
+        margin: 15px 0 0 35px;
+        font-weight:600;
+      }
+
+      .second-row,
+      .third-row,
+      .fourth-row,
+      .fifth-row
+       {
+        width:90%;
+        height:50px;
+        border-bottom:2px solid #e1e5e7;
+        margin: 0 auto;
+      }
+
+      .second-row img {
+        margin:20px 0 0 20px;
+      }
+
+      .third-row ,
+      .fourth-row ,
+      .fifth-row {
+        position:relative;
+      }
+
+      .third-row .key,
+      .fourth-row .key,
+      .fifth-row .key{
+        display:inline-block;
+        margin: 15px 0 0 10px;
+        color:#999999;
+      }
+
+      .devide-line{
+        position:absolute;
+        top:5px;
+        width:3px;
+        height:25px;
+        background: #e1e5e7;
+        margin:10px 0 0 5px;
+      }
+
+      .value {
+        color:#e26163;
+      }
+
+      .introduce {
+        width:90%;
+        border-bottom:2px solid #e1e5e7;
+        margin: 0 auto;
+        display: table;
+      }
+
+      .introduce .introduce-title {
+        width:90px;
+        display: table-cell;
+        vertical-align:middle;
+        position:relative;
+      }
+
+      .introduce .introduce-title span:first-child{
+          display:inline-block;
+          color:#999999;
+          margin-left:10px;
+      }
+
+      .introduce .introduce-title span:last-child{
+        display:inline-block;
+        width:3px;
+        height:25px;
+        background: #e1e5e7;
+        position:absolute;
+        left: 84px;
+      }
+
+      .father-introduce-content {
+        margin:15px 0 15px 0;
+      }
+
+      .father-introduce-content .introduce-content{
+        display: table-cell;
+        vertical-align:middle;
+        padding-left:2px;
+      }
+
+      .button-box {
+        width:100%;
+        height:60px;
+        background: #fff;
+        position: fixed;
+        bottom: 0;
+        margin-top: 10px;
+      }
+
+      button.message{
+        width:45%;
+        height:50px;
+        background: #fff;
+        color: #5fc0cd;
+        border-radius: 10px;
+        border: 2px solid #5fc0cd;
+        margin:10px 0 0 3%;
+        font-size: 20px;
+        outline:0;
+      }
+
+      button.tel {
+        width:45%;
+        height:50px;
+        background: #5fc0cd;
+        color: #fff;
+        border-radius: 10px;
+        border: 2px solid #5fc0cd;
+        margin:10px 0 0 3%;
+        font-size: 20px;
+        outline:0;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="head">
+    <div class="arrow"></div>
+    <span>个人主页</span>
+  </div>
+
+  <div class="content">
+    <div class="background">
+      <img src="img/person.png" class="person" />
+      <div>
+        <p>徐士林 55岁</p>
+        <img src="img/position.png" />
+        <span>京城&nbsp;&nbsp;·&nbsp;&nbsp;四方&nbsp;&nbsp;·&nbsp;&nbsp;报纸林</span>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="first-row">
+        <div class="vertical-line"></div>
+        <span>专业技能</span>
+      </div>
+
+      <div class="second-row">
+        <div class="imgbox">
+          <img src="img/star.png" /><span>&nbsp;住家</span>
+          <img src="img/star.png" /><span>&nbsp;不含餐</span>
+        </div>
+      </div>
+
+      <div class="third-row">
+        <span class="key">从业年限</span>
+        <span class="devide-line"></span>
+        <span>&nbsp;&nbsp;&nbsp;0~3年</span>
+      </div>
+
+      <div class="fourth-row">
+        <span class="key">工作时间</span>
+        <span class="devide-line"></span>
+        <span>&nbsp;&nbsp;&nbsp;全天</span>
+      </div>
+
+      <div class="fifth-row">
+        <span class="key">服务价格</span>
+        <span class="devide-line"></span>
+        <span class="value">&nbsp;&nbsp;&nbsp;25元/小时</span>
+      </div>
+
+      <div class="introduce">
+        <div class="introduce-title">
+          <span>自我介绍</span>
+          <span></span>
+        </div>
+        <div class="father-introduce-content">
+          <div class="introduce-content">
+            可以洗衣、做饭、照顾老人。在护工方面有5年经验，经验丰富。可以洗衣、做饭、照顾老人。在护工方面有5年经验，经验丰富。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-box">
+    <button type="button" name="message" class="message">留言</button>
+    <button type="button" name="tel" class="tel">电话联系</button>
+  </div>
+</body>
+
+</html>
